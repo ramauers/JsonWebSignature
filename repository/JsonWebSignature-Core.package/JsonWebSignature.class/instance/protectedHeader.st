@@ -1,3 +1,4 @@
 Accessing
 protectedHeader
-	^protectedHeader
+
+	^ protectedHeader

@@ -1,5 +1,5 @@
 public
 asCompactString
 
-	^String streamContents:
+	^ String streamContents:
 		[ :stream | self writeCompactOn: stream ]
