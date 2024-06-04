@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"decode:" : "RalphMauersberger 04/10/2024 22:06",
+		"decodeIntoString:" : "RalphMauersberger 04/17/2024 11:08",
+		"encode:" : "RalphMauersberger 04/10/2024 22:05" },
+	"instance" : {
+		"decode:" : "RalphMauersberger 04/14/2024 22:12",
+		"encode:" : "RalphMauersberger 04/10/2024 22:47",
+		"ensureValidAlphabetOfBase64UrlInput:" : "RalphMauersberger 04/14/2024 22:21",
+		"paddingLength:" : "RalphMauersberger 04/14/2024 03:36",
+		"transcodeCharBase64ToBase64Url:" : "RalphMauersberger 04/10/2024 22:09",
+		"transcodeCharBase64UrlToBase64:" : "RalphMauersberger 04/10/2024 22:08" } }

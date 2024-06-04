@@ -1,0 +1,4 @@
+public
+acceptUnsecured
+
+	acceptUnsecured := true

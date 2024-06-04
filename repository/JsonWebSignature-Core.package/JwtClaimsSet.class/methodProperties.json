@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"fromString:" : "RalphMauersberger 04/14/2024 10:46" },
+	"instance" : {
+		"asUtf8String" : "RalphMauersberger 04/18/2024 12:16",
+		"at:" : "RalphMauersberger 04/18/2024 13:00",
+		"at:put:" : "RalphMauersberger 04/18/2024 13:01",
+		"claims" : "RalphMauersberger 04/14/2024 10:44",
+		"claims:" : "RalphMauersberger 04/14/2024 10:44",
+		"initialize" : "RalphMauersberger 04/14/2024 10:37",
+		"printOn:" : "RalphMauersberger 04/18/2024 12:06" } }

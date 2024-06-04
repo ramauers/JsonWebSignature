@@ -1,0 +1,14 @@
+{
+	"category" : "JsonWebSignature-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "JsonWebAlgorithmNone",
+	"pools" : [
+		 ],
+	"super" : "JsonWebAlgorithm",
+	"type" : "normal" }

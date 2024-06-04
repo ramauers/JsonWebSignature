@@ -1,0 +1,4 @@
+private
+isAcceptUnsecured
+
+	^ acceptUnsecured

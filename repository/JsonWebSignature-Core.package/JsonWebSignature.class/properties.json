@@ -1,0 +1,19 @@
+{
+	"category" : "JsonWebSignature-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"protectedHeader",
+		"payload",
+		"signature",
+		"rawHeaderDotPayload",
+		"key",
+		"acceptUnsecured" ],
+	"name" : "JsonWebSignature",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

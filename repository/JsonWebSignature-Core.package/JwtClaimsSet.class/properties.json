@@ -1,0 +1,14 @@
+{
+	"category" : "JsonWebSignature-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"claims" ],
+	"name" : "JwtClaimsSet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
