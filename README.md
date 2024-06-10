@@ -1,7 +1,7 @@
 # JsonWebSignature
 Basic Implementation of JSON Web Tokens (JWT) / JWS Compact Serialization for GemStone/S
 
-This package implements basic Json Web Token support as it is comonly used nowadays for API protection with OAuth 2.0 and OpenID Connect (OIDC).
+This package implements basic Json Web Token support as it is commonly used nowadays for API protection with OAuth 2.0 and OpenID Connect (OIDC).
 This package was developed in GemStone/S 3.7.0 and has no dependencies other than GemStone's Kernel Classes.
 
 Currently supported algorithms are "HS256", "RS256" and "none" but the structure of the package allows adding others as well... 
@@ -27,13 +27,15 @@ jws verify
             Access and check header and payload as necessary and only perform your business stuff if everything is okay..."]
     ifFalse:["Signature verification failed. --> 401"].
 
-jws --printIt -->
+"
+jws --printIt-->
 
  aJsonWebSignature(
 	protectedHeader: aJoseHeader(parameter: aDictionary( 'alg'->'HS256', 'typ'->'JWT'))
 	payload: aJwtClaimsSet(claims: aDictionary( 'name'->'John Doe', 'iat'->1516239022, 'sub'->'1234567890'))
 	signature: aByteArray( 73, 249, 74, 199, 4, 73, 72, 199, 138, 40, 93, 144, 79, 135, 240, 164, 199, 137, 127, 126, 143, 58, 78, 178, 37, 95, 218, 117, 11, 44, 195, 151)
 )
+"
 ```
 
 ## Serialize a RS256 Token
@@ -82,10 +84,10 @@ jws sign.
 
 token := jws asCompactString.
 
-"token --printIt-->
+"
+token --printIt-->
 
  'eyJhbGciOiJSUzI1NiJ9.eyJsYW5ndWFnZSI6IlNtYWxsdGFsayJ9.qmc_6PwY8U7zDwE7YlxKaUeBZbcaDMAkFLfRFd1TzaczhoQ-GoYbFDPO5qPslYqwZY6XJy_-N5v8xBy-ItyTrRIfNSOMGu23GZrFzAa-yG5W36oyPAF56-5nQaXs0qIDuz2ZaEyxtqyS2gArzJV24uXOpdivtmtdevuLz-lLO_4I3q5WwItwdJOhY0dYcgTBwrhblps7QXvK29iOeh9nizsNY3D9SY557kmpIO2Btg5CX_Mfs2_ga70o_lwckIZTz1mpGjGiaryFs4dzzhcatEIJIP8ud0fRn3Sp9tZxT0GKL6BQcGbwOObBioqLzLRMi1ZsJUD2TuQbaZJxee1bkQ'
-
 "
 ```
 ## Materialize a RS256 Token
@@ -115,5 +117,9 @@ jws key: publicKey.
 	ifTrue:[jws payload asJson]
 	ifFalse:[ 'no valid token, not worth to look at.' ].
 
---printIt-->  '{"claims":{"language":"Smalltalk"}}'
+"
+--printIt-->
+
+'{"claims":{"language":"Smalltalk"}}'
+"
 ```
